@@ -1,0 +1,68 @@
+* {
+	box-sizing: content-box;
+}
+body {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+header {
+	background-color:#738e6f;
+	padding: 1em;	
+}
+h1 {
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	color: white;
+	font-size: 5vw;
+}
+.tomato-hoverswap {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	max-width: 50vw;
+	cursor: pointer;
+}
+.tomato-hoverswap img {
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+}
+.tomato-hoverswap .tomato-whole {
+	width: 50vw;
+	height: auto;
+	z-index: -1;
+}
+
+.tomato-hoverswap .tomato-smash {
+	width: 50vw;
+	height: auto;
+	opacity: 0;
+	transition: all 0.05s;
+	transform: scale(0.8);
+}
+.tomato-hoverswap .tomato-smash#smash {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.reset {
+	background-color:tomato;
+	border: none;
+	box-shadow: none;
+	padding: 1.5em 1em;
+	border-radius: 50%;
+	color: white;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 2em;
+	position: relative;
+	display: block;
+	margin: 10em 0 0 7em;
+	display: none;
+}
+.reset:hover {
+	background-color: white;
+	border: 2px solid tomato;
+	color: black;
+}
